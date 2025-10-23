@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Historia - Municipios de Managua</title>
+    <link rel="stylesheet" href="css/historia.css" />
+    <script src="Js/historia.js"></script>
+
+</head>
+<body>
+    <main class="card" role="main">
+        <header>
+            <div style="display:flex;flex-direction:column">
+                <h1>Historia por municipio — Managua</h1>
+                <p>Selecciona una pestaña para ver una breve historia y una imagen representativa.</p>
+            </div>
+            <div style="margin-left:auto" class="badge">Guía Turística Digital</div>
+        </header>
+
+        <nav class="tabs" role="tablist" aria-label="Municipios de Managua" id="tabs">
+            <button class="tab active" role="tab" aria-selected="true" data-id="managua">Managua</button>
+            <button class="tab" role="tab" data-id="ciudad-sandino">Ciudad Sandino</button>
+            <button class="tab" role="tab" data-id="mateare">Mateare</button>
+            <button class="tab" role="tab" data-id="tipitapa">Tipitapa</button>
+            <button class="tab" role="tab" data-id="ticuantepe">Ticuantepe</button>
+            <button class="tab" role="tab" data-id="san-rafael">San Rafael del Sur</button>
+            <button class="tab" role="tab" data-id="el-crucero">El Crucero</button>
+            <button class="tab" role="tab" data-id="villa-el-carmen">Villa El Carmen</button>
+            <button class="tab" role="tab" data-id="san-francisco">San Francisco Libre</button>
+        </nav>
+
+        <section class="panel" id="panelArea">
+            <!-- text content -->
+            <article class="content" id="contentArea" aria-live="polite">
+                <h2 id="title">Managua</h2>
+                <div class="meta">
+                    <span class="badge">Capital</span>
+                    <small id="short">Centro político y cultural de Nicaragua con una historia marcada por reconstrucciones tras terremotos.</small>
+                </div>
+                <p id="desc">Managua es la capital del país; su historia reúne épocas precolombinas y coloniales, desarrollo urbano del siglo XX y una vida cultural muy activa. Es el corazón administrativo y cultural de la región.</p>
+            </article>
+
+            <!-- image -->
+            <aside class="image-card" id="imageCard" aria-hidden="false">
+                <img id="mainImage" src="https://source.unsplash.com/800x600/?managua,nicaragua,city" alt="Imagen representativa de Managua">
+                <div class="image-caption">
+                    <strong id="imgTitle">Managua</strong>
+                    <small id="imgNote">Imagen representativa — reemplaza por fotos locales si lo prefieres.</small>
+                </div>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
