@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Guía turística digital de Managua — Inicio</title>
+		<meta name="description" content="Guía turística digital de Managua: presentación, navegación y bienvenida." />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Saltar al contenido</a>
+
+		<header class="site-header" role="banner">
+			<div class="container header-inner">
+				<div class="brand">
+					<img src="" alt="Escudo de Managua (decorativo)" aria-hidden="true" class="brand-logo" />
+					<h1 class="site-title">Guía turística digital de Managua</h1>
+				</div>
+
+				<button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+					<span class="hamburger" aria-hidden="true"></span>
+					<span class="visually-hidden">Abrir menú</span>
+				</button>
+
+				<nav id="mainNav" class="main-nav" role="navigation" aria-label="Principal">
+					<ul class="nav-list">
+						<li><a href="index.html" class="active">Inicio</a></li>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="lugares.html">Lugares</a></li>
+						<li><a href="gastronomia.html">Gastronomía</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main" class="container" role="main">
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="hero-inner">
+					<h2 id="hero-title">Bienvenido a la Guía turística digital de Managua</h2>
+					<p class="lead">Explora la capital de Nicaragua: su historia, lugares emblemáticos, cultura y gastronomía en una guía accesible y moderna.</p>
+					<p>
+						<a href="#presentacion" class="btn primary">Conocer más</a>
+						<a href="lugares.html" class="btn outline">Ver lugares</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="presentacion" class="presentation" aria-labelledby="pres-title">
+				<h3 id="pres-title">Presentación general</h3>
+				<p>Esta guía está pensada para quienes desean conocer Managua: recorridos recomendados, contextos históricos, puntos turísticos, eventos culturales y recomendaciones prácticas. Está diseñada con criterios de accesibilidad, contraste adecuado y navegación clara.</p>
+
+				<div class="cards">
+					<article class="card" aria-labelledby="card1">
+						<h4 id="card1">Rápida orientación</h4>
+						<p>Mapas, rutas y tiempos estimados para aprovechar tu visita según tus intereses.</p>
+					</article>
+
+					<article class="card" aria-labelledby="card2">
+						<h4 id="card2">Cultura y festividades</h4>
+						<p>Agenda de eventos y recomendaciones para vivir la cultura managüense de forma segura y respetuosa.</p>
+					</article>
+
+					<article class="card" aria-labelledby="card3">
+						<h4 id="card3">Gastronomía</h4>
+						<p>Platos típicos, mercados y restaurantes con opciones locales y para turistas.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="how-to" aria-labelledby="how-title">
+				<h3 id="how-title">Cómo usar esta guía</h3>
+				<ol>
+					<li>Usa la navegación superior para moverte entre secciones principales.</li>
+					<li>Explora las páginas de cada tópico (Historia, Lugares, Gastronomía, Contacto).</li>
+					<li>Contacta o comparte recomendaciones desde la sección de contacto.</li>
+				</ol>
+			</section>
+		</main>
+
+		<footer class="site-footer" role="contentinfo">
+			<div class="container footer-inner">
+				<p>© <span id="year"></span> Guía turística digital de Managua — Hecho con los colores de la bandera de Nicaragua.</p>
+				<p class="small">Diseño accesible — Contraste y navegación contemplados.</p>
+			</div>
+		</footer>
+
+		<script src="Js/script.js" defer></script>
+	</body>
+</html>
+
