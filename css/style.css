@@ -1,0 +1,83 @@
+:root{
+	--blue-dark: #0b4ea2; /* color profundo similar al azul de la bandera */
+	--blue-light: #7fc3e3; /* azul claro de apoyo */
+	--white: #ffffff;
+	--text: #0b2239;
+	--accent: #fffbe6;
+	--max-width: 1100px;
+}
+
+/* Reset y tipografía */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color:var(--text);
+	background: linear-gradient(180deg, #f7fbfd 0%, #ffffff 100%);
+	-webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:var(--blue-dark);color:var(--white);padding:.5rem .75rem;border-radius:4px;z-index:999}
+
+/* Header */
+.site-header{background:var(--white);border-bottom:4px solid var(--blue-dark);box-shadow:0 2px 6px rgba(11,78,162,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.brand-logo{width:48px;height:48px;background:var(--blue-light);border-radius:6px;display:block}
+.site-title{font-size:1.125rem;margin:0;color:var(--blue-dark)}
+
+.nav-toggle{display:none;background:none;border:0;padding:.5rem;border-radius:6px}
+.nav-toggle:focus{outline:3px solid rgba(11,78,162,.25)}
+.hamburger{display:block;width:28px;height:3px;background:var(--blue-dark);position:relative}
+.hamburger::after,.hamburger::before{content:'';position:absolute;left:0;width:28px;height:3px;background:var(--blue-dark)}
+.hamburger::before{top:-8px}.hamburger::after{top:8px}
+
+.main-nav .nav-list{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center}
+.nav-list a{color:var(--blue-dark);text-decoration:none;padding:.5rem .6rem;border-radius:6px}
+.nav-list a:focus{outline:3px solid rgba(11,78,162,.18)}
+.nav-list a:hover,.nav-list a.active{background:var(--blue-light);color:var(--white)}
+
+/* Hero con alusión a la bandera: franjas horizontales tenues */
+.hero{margin:1.5rem 0;padding:2.25rem;border-radius:12px;color:var(--white);background: linear-gradient(180deg,var(--blue-dark) 0%, var(--blue-dark) 55%, var(--white) 55%, var(--white) 70%, var(--blue-light) 70%);}
+.hero-inner{max-width:720px}
+.hero h2{margin:0 0 .5rem;font-size:2rem}
+.lead{margin:0 0 1rem;font-size:1.05rem}
+
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--white);color:var(--blue-dark)}
+.btn.outline{background:transparent;border:2px solid var(--white);color:var(--white)}
+.btn:focus{outline:3px solid rgba(255,255,255,.2)}
+
+/* Presentación y tarjetas */
+.presentation{margin:1.5rem 0;padding:1rem;background:var(--white);border-radius:10px}
+.presentation h3{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.card{padding:1rem;border-radius:8px;background:linear-gradient(180deg, #f8fbff, #ffffff);box-shadow:0 2px 6px rgba(11,78,162,0.05)}
+.card h4{margin-top:0}
+
+.how-to{margin:1.5rem 0;padding:1rem;background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:10px}
+
+/* Footer */
+.site-footer{margin-top:2rem;padding:1rem 0;background:var(--blue-dark);color:var(--white)}
+.footer-inner{display:flex;flex-direction:column;gap:.25rem;align-items:center}
+.site-footer .small{opacity:.9;font-size:.9rem}
+
+/* Responsive */
+@media (max-width:800px){
+	.nav-toggle{display:block}
+	.main-nav{position:absolute;right:1rem;top:72px;background:var(--white);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.08);display:none;padding:.5rem}
+	.main-nav.open{display:block}
+	.nav-list{flex-direction:column;min-width:180px}
+	.hero h2{font-size:1.5rem}
+}
+
+/* Accesibilidad */
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* Enlaces y enfoque visibles para teclado */
+a:focus{outline:3px solid rgba(11,78,162,.18);outline-offset:2px}
+
