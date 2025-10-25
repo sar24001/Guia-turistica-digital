@@ -41,9 +41,10 @@ body{
 .nav-list a:focus{outline:3px solid rgba(11,78,162,.18)}
 .nav-list a:hover,.nav-list a.active{background:var(--blue-light);color:var(--white)}
 
-/* Hero con alusión a la bandera: franjas horizontales tenues */
-.hero{margin:1.5rem 0;padding:2.25rem;border-radius:12px;color:var(--white);background: linear-gradient(180deg,var(--blue-dark) 0%, var(--blue-dark) 55%, var(--white) 55%, var(--white) 70%, var(--blue-light) 70%);}
-.hero-inner{max-width:720px}
+/* Hero con alusión a la bandera: contenido sobre azul y franjas decorativas al pie */
+.hero{position:relative;margin:1.5rem 0;padding:2.25rem;border-radius:12px;color:var(--white);background:var(--blue-dark);overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(180deg, var(--white) 0%, var(--blue-light) 100%);border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+.hero-inner{position:relative;z-index:1;max-width:720px}
 .hero h2{margin:0 0 .5rem;font-size:2rem}
 .lead{margin:0 0 1rem;font-size:1.05rem}
 

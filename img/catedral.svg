@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="426" viewBox="0 0 640 426">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b4ea2"/>
+      <stop offset="100%" stop-color="#7fc3e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="426" rx="16" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <!-- Torretas -->
+    <rect x="140" y="160" width="60" height="140" rx="4"/>
+    <rect x="440" y="160" width="60" height="140" rx="4"/>
+    <path d="M170 140 L200 160 L140 160 Z"/>
+    <path d="M470 140 L500 160 L440 160 Z"/>
+    <!-- Cuerpo central -->
+    <rect x="220" y="190" width="200" height="110" rx="8"/>
+    <path d="M220 190 L320 140 L420 190 Z"/>
+    <!-- Puertas y arcos -->
+    <path d="M250 300 v-40 a20 20 0 0 1 40 0 v40"/>
+    <path d="M350 300 v-40 a20 20 0 0 1 40 0 v40"/>
+  </g>
+  <title>Antigua Catedral de Managua (ilustración)</title>
+</svg>

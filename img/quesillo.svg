@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="426" viewBox="0 0 640 426">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b4ea2"/>
+      <stop offset="100%" stop-color="#7fc3e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="426" rx="16" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <!-- Tortilla -->
+    <circle cx="320" cy="260" r="90"/>
+    <!-- Salsa/crema -->
+    <path d="M260 250 q60 -30 120 10 q-60 40 -120 20"/>
+  </g>
+  <title>Quesillo (ilustración)</title>
+</svg>

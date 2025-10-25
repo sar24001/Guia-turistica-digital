@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="426" viewBox="0 0 640 426">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b4ea2"/>
+      <stop offset="100%" stop-color="#7fc3e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="426" rx="16" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <!-- Silueta de loma -->
+    <path d="M80 300 C160 240 240 260 320 280 C400 300 480 270 560 240"/>
+    <!-- Monumento -->
+    <line x1="320" y1="210" x2="320" y2="170"/>
+    <circle cx="320" cy="160" r="10"/>
+    <line x1="320" y1="190" x2="300" y2="210"/>
+    <line x1="320" y1="190" x2="340" y2="210"/>
+  </g>
+  <title>Loma de Tiscapa (ilustración)</title>
+</svg>

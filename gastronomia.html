@@ -1,127 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gastronomía de Nicaragua — Platos Típicos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8fafc;
-      color: #111;
-    }
-    header {
-      background: #024731;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 { margin: 0; }
-    p { margin: 8px 0 0; }
-    main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .content {
-      padding: 15px;
-    }
-    .content h2 {
-      margin: 0 0 10px;
-      color: #024731;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Platos Típicos de Nicaragua</h1>
-    <p>Una muestra de la rica gastronomía nicaragüense</p>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gastronomía de Managua — Platos típicos</title>
+    <meta name="description" content="Selección de platos típicos nicaragüenses con imágenes y descripciones." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <main>
-    <!-- Gallo Pinto -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Gallo_pinto.jpg" alt="Gallo Pinto">
-      <div class="content">
-        <h2>Gallo Pinto</h2>
-        <p>Mezcla de arroz y frijoles fritos, acompañado con crema, queso o huevos. Es el desayuno tradicional de Nicaragua.</p>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1 class="site-title">Guía turística digital de Managua</h1>
+        </div>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+          <span class="hamburger" aria-hidden="true"></span>
+          <span class="visually-hidden">Abrir menú</span>
+        </button>
+        <nav id="mainNav" class="main-nav" role="navigation" aria-label="Principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+            <li><a href="gastronomia.html" class="active">Gastronomía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- Nacatamal -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Nacatamal.jpg" alt="Nacatamal nicaragüense">
-      <div class="content">
-        <h2>Nacatamal</h2>
-        <p>Elaborado con masa de maíz, carne de cerdo, arroz, papa y especias, envuelto en hojas de plátano y cocido al vapor.</p>
+    <main id="main" class="container" role="main">
+      <section aria-labelledby="gastro-title" class="presentation">
+        <h2 id="gastro-title">Platos típicos</h2>
+        <p class="lead">Una muestra de la rica gastronomía nicaragüense. Todas las imágenes referencian medios libres (Wikimedia Commons).</p>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <img loading="lazy" width="640" height="426"
+                 src="img/gallo-pinto.svg"
+                 alt="Gallo Pinto (ilustración)" />
+            <h3>Gallo Pinto</h3>
+            <p>Mezcla de arroz y frijoles fritos, frecuentemente acompañado de crema, queso o huevos. Desayuno tradicional.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img loading="lazy" width="640" height="426"
+                 src="img/nacatamal.svg"
+                 alt="Nacatamal (ilustración)" />
+            <h3>Nacatamal</h3>
+            <p>Masa de maíz con carne, arroz y especias, envuelta en hoja de plátano y cocida al vapor.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img loading="lazy" width="640" height="426"
+                 src="img/vigoron.svg"
+                 alt="Vigorón (ilustración)" />
+            <h3>Vigorón</h3>
+            <p>Yuca cocida con chicharrón y ensalada de repollo con tomate y zanahoria.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img loading="lazy" width="640" height="426"
+                 src="img/quesillo.svg"
+                 alt="Quesillo (ilustración)" />
+            <h3>Quesillo</h3>
+            <p>Tortilla de maíz con queso suave, cebolla curtida y crema.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img loading="lazy" width="640" height="426"
+                 src="img/baho.svg"
+                 alt="Baho (ilustración)" />
+            <h3>Baho (Vaho)</h3>
+            <p>Plato tradicional a base de carne, yuca y plátano, cocido lentamente al vapor.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Guía turística digital de Managua.</p>
       </div>
-    </div>
+    </footer>
 
-    <!-- Vigorón -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Vigoron.jpg" alt="Vigorón">
-      <div class="content">
-        <h2>Vigorón</h2>
-        <p>Yuca cocida servida con chicharrón y ensalada de repollo con tomate y zanahoria. Muy popular en Granada.</p>
-      </div>
-    </div>
-
-    <!-- Indio Viejo -->
-    <div class="card">
-      <img src="https://www.laprensa.com.ni/wp-content/uploads/2017/09/indio-viejo.jpg" alt="Indio Viejo">
-      <div class="content">
-        <h2>Indio Viejo</h2>
-        <p>Guiso espeso de carne desmenuzada, masa de maíz, achiote y verduras. Su textura cremosa lo hace muy especial.</p>
-      </div>
-    </div>
-
-    <!-- Rondón -->
-    <div class="card">
-      <img src="https://i0.wp.com/www.comidasnicaraguenses.com/wp-content/uploads/2019/08/rondon-nicaragua.jpg" alt="Rondón">
-      <div class="content">
-        <h2>Rondón</h2>
-        <p>Sopa de la Costa Caribe elaborada con leche de coco, pescado o mariscos, yuca, plátano y especias criollas.</p>
-      </div>
-    </div>
-
-    <!-- Quesillo -->
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Quesillo_de_Nicaragua.jpg" alt="Quesillo nicaragüense">
-      <div class="content">
-        <h2>Quesillo</h2>
-        <p>Tortilla de maíz rellena con queso suave, cebolla curtida y crema. Tradicionalmente servido en bolsa plástica.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>Tarea — Gastronomía de Nicaragua | Imágenes de Wikipedia y medios libres</p>
-  </footer>
-</body>
-</html>
+    <script src="Js/script.js" defer></script>
+  </body>
+  </html>
