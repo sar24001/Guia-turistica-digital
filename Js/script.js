@@ -37,5 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	});
+
+	// Manejo simple del formulario de contacto (si existe)
+	const contactForm = document.getElementById('contactForm');
+	if (contactForm) {
+		contactForm.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const status = document.getElementById('formStatus');
+			if (status) {
+				status.textContent = 'Gracias por tu mensaje. Te responderemos pronto.';
+			}
+			contactForm.reset();
+		});
+	}
 });
 
