@@ -7,11 +7,11 @@ Ofrecer a visitantes y residentes una guía práctica, accesible y visual de Man
 - Ejemplo de prompt utilizado:
 "se está trabajando una página web de cinco páginas. en esta, la primera será Inicio, donde estará la Presentación general, bienvenida, navegación. esto se trabaja únicamente en el archivo index.html. el tema es "Guía turística digital de Managua".
 
-utiliza un diseño atractivo, accesible y profesional, que aplique los colores de la bandera de Nicaragua y aluda a la temática. todos los estilos se aplicaran en style.css. por otro lado, emplea scripts desde el archivo script.js."
-
 ### Cómo se usó GitHub Copilot
 - Sugerencias para la estructura semántica y accesible del layout (header/nav/main/footer) reutilizable en todas las páginas.
 - Generación del CSS centralizado (`css/style.css`) con variables de color, componentes (tarjetas, botones) y estilos responsivos.
 - Apoyo en el JavaScript ligero (`Js/script.js`) para el menú móvil, desplazamiento suave y manejo básico del formulario de contacto.
 - Aceleración en la creación de las páginas `lugares.html` (galería) y `contacto.html` (formulario) manteniendo consistencia visual y accesibilidad.
 
+### Enlace al sitio web (GitHub Pages)
+https://sar24001.github.io/Guia-turistica-digital/
